@@ -1,8 +1,11 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* RDBiz AI Solution - Futuristic AI Company Theme */
+/* RDBiz AI Solution - Premium Futuristic AI Company Theme */
 @layer base {
   :root {
     /* Deep Space Background */
@@ -137,6 +140,51 @@
     @apply animate-fade-in;
   }
 
+  /* Scroll-triggered animations */
+  .scroll-animate {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  .scroll-animate.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .scroll-animate-left {
+    opacity: 0;
+    transform: translateX(-40px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+
+  .scroll-animate-left.visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .scroll-animate-right {
+    opacity: 0;
+    transform: translateX(40px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+
+  .scroll-animate-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .scroll-animate-scale {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+
+  .scroll-animate-scale.visible {
+    opacity: 1;
+    transform: scale(1);
+  }
+
   /* Hover Lift Effect */
   .hover-lift {
     @apply transition-all duration-300 ease-out;
@@ -184,6 +232,14 @@
     background-image: linear-gradient(135deg, hsl(220 85% 45%), hsl(185 85% 40%));
   }
 
+  /* Gradient Text - Extended with purple */
+  .gradient-text-vivid {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(220 85% 45%), hsl(270 65% 55%), hsl(185 85% 40%));
+    background-size: 200% 200%;
+    animation: gradient-shift 4s ease infinite;
+  }
+
   /* Subtle glow */
   .pulse-glow {
     @apply animate-pulse-glow;
@@ -195,6 +251,22 @@
     height: 2px;
     background: linear-gradient(90deg, transparent, hsl(var(--secondary) / 0.5), transparent);
     border: none;
+  }
+
+  /* Animated gradient border */
+  .gradient-border {
+    position: relative;
+  }
+  .gradient-border::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, hsl(220 85% 45%), hsl(270 65% 55%), hsl(185 85% 40%), hsl(220 85% 45%));
+    background-size: 300% 100%;
+    animation: gradient-flow 3s linear infinite;
   }
 
   /* AI Neural Network Glow */
@@ -221,6 +293,52 @@
     background: hsl(var(--card) / 0.7);
     backdrop-filter: blur(12px);
     border: 1px solid hsl(var(--border) / 0.5);
+  }
+
+  /* Hero particles overlay */
+  .hero-particles {
+    background-image:
+      radial-gradient(circle at 20% 50%, hsl(220 85% 55% / 0.08) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, hsl(185 85% 40% / 0.06) 0%, transparent 50%),
+      radial-gradient(circle at 40% 80%, hsl(270 65% 55% / 0.05) 0%, transparent 50%);
+  }
+
+  /* Animated counter */
+  .counter-value {
+    font-family: 'JetBrains Mono', monospace;
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Typing cursor animation */
+  .typing-cursor::after {
+    content: '|';
+    animation: blink 1s step-end infinite;
+    color: hsl(var(--primary));
+    font-weight: 300;
+  }
+
+  /* Shimmer overlay */
+  .shimmer-overlay {
+    position: relative;
+    overflow: hidden;
+  }
+  .shimmer-overlay::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, hsl(220 85% 45% / 0.06), transparent);
+    animation: shimmer-sweep 3s ease-in-out infinite;
+  }
+
+  /* Tech grid pattern */
+  .tech-grid-bg {
+    background-image: 
+      linear-gradient(hsl(220 15% 88% / 0.3) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(220 15% 88% / 0.3) 1px, transparent 1px);
+    background-size: 40px 40px;
   }
 }
 
@@ -274,4 +392,47 @@
 @keyframes glow-pulse {
   0%, 100% { opacity: 0.4; }
   50% { opacity: 0.8; }
+}
+
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes gradient-flow {
+  0% { background-position: 0% 0%; }
+  100% { background-position: 300% 0%; }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@keyframes shimmer-sweep {
+  0% { left: -100%; }
+  100% { left: 200%; }
+}
+
+@keyframes count-up {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes orbit {
+  0% { transform: rotate(0deg) translateX(60px) rotate(0deg); }
+  100% { transform: rotate(360deg) translateX(60px) rotate(-360deg); }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

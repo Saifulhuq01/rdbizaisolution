@@ -8,38 +8,44 @@ const Header = () => {
 
   return (
     <>
-      <header className="bg-card border-b-4 border-primary px-8 py-6 shadow-soft">
+      <header className="bg-card gradient-border px-8 py-6 shadow-soft relative">
         <div className="max-w-7xl mx-auto flex items-center justify-between gap-8">
           {/* Logo */}
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 group cursor-pointer">
             <img 
               src={rdbizLogo} 
               alt="RDBiz AI Solution Logo" 
-              className="h-20 object-contain"
+              className="h-20 object-contain group-hover:scale-105 transition-transform duration-300"
             />
           </div>
 
           {/* Header Text */}
           <div className="flex-1 mx-8 fade-in flex items-center justify-center text-center">
-            <p className="text-foreground text-2xl leading-relaxed max-w-2xl">
-              <span className="gradient-text font-bold text-4xl">RDBiz AI Solution</span>
-              <br />
-              <strong className="text-primary mt-2 block animate-pulse">Intelligence Driven • Innovation Delivered</strong>
-            </p>
+            <div className="space-y-2">
+              <h1 className="gradient-text-vivid font-extrabold text-4xl md:text-5xl tracking-tight">
+                RDBiz AI Solution
+              </h1>
+              <p className="text-primary font-semibold text-base md:text-lg animate-pulse tracking-wider">
+                Intelligence Driven • Innovation Delivered
+              </p>
+            </div>
           </div>
 
           {/* CEO Section */}
           <div 
-            className="text-center cursor-pointer hover-lift"
+            className="text-center cursor-pointer hover-lift group"
             onClick={() => setIsModalOpen(true)}
           >
-            <img 
-              src={ceoRavi} 
-              alt="CEO Dr. Ravi Dakshinamoorthy" 
-              className="w-20 h-20 rounded-full border-2 border-primary object-cover mx-auto"
-            />
+            <div className="relative">
+              <img 
+                src={ceoRavi} 
+                alt="CEO Dr. Ravi Dakshinamoorthy" 
+                className="w-20 h-20 rounded-full border-3 border-primary object-cover mx-auto group-hover:border-secondary transition-colors duration-300"
+              />
+              <div className="absolute -bottom-1 -right-1 w-5 h-5 bg-emerald-500 rounded-full border-2 border-white" title="Active" />
+            </div>
             <p className="mt-2 text-sm">
-              <strong className="text-secondary">Dr. Ravi Dakshinamoorthy</strong>
+              <strong className="text-secondary group-hover:text-primary transition-colors">Dr. Ravi Dakshinamoorthy</strong>
               <br />
               <span className="text-primary text-xs font-medium">Our Founder & CEO</span>
             </p>
@@ -53,13 +59,18 @@ const Header = () => {
 
           <DialogHeader>
             <div className="flex justify-center mb-4">
-              <img 
-                src={ceoRavi} 
-                alt="CEO Dr. Ravi Dakshinamoorthy" 
-                className="w-32 h-32 rounded-full border-4 border-primary object-cover"
-              />
+              <div className="relative">
+                <img 
+                  src={ceoRavi} 
+                  alt="CEO Dr. Ravi Dakshinamoorthy" 
+                  className="w-32 h-32 rounded-full border-4 border-primary object-cover"
+                />
+                <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground text-xs font-bold px-3 py-0.5 rounded-full">
+                  CEO
+                </div>
+              </div>
             </div>
-            <DialogTitle className="text-2xl gradient-text">
+            <DialogTitle className="text-2xl gradient-text text-center">
              Dr. Ravi Dakshinamoorthy
             </DialogTitle>
           </DialogHeader>
@@ -76,7 +87,7 @@ const Header = () => {
 
             <p>He has successfully led System-of-Systems, System Engineering, and Architecture Management, along with integrated tasks for many large-scale programmes and projects world wide.</p>
 
-            <div className="bg-primary/10 p-4 rounded-lg">
+            <div className="bg-primary/10 p-4 rounded-lg border-l-4 border-primary">
               <p className="font-semibold text-secondary mb-3">Major Programme Leadership:</p>
               <ul className="space-y-2 ml-4">
                 <li>• <strong>The Future Combat Systems</strong> (US Army)</li>
@@ -87,7 +98,7 @@ const Header = () => {
 
             <p>✅ <strong>Dr. Ravi has also served as an independent consultant and Project Manager to the State Governor of Washington, USA,</strong> in producing a 640-page report on the RV–1 Consolidation Program "for legislative assembly members' discussion and budgetary debate."</p>
 
-            <div className="bg-secondary/10 p-4 rounded-lg">
+            <div className="bg-secondary/10 p-4 rounded-lg border-l-4 border-secondary">
               <p className="font-semibold text-primary mb-3">✅ Dr. Ravi is a legendary leader in IT development with thirty years of post-doctorate experience, having interest in diversified subject areas including:</p>
               <div className="grid md:grid-cols-2 gap-2 ml-4">
                 <ul className="space-y-1">

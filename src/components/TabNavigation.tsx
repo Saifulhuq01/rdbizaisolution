@@ -10,6 +10,9 @@ import ReviewSection from './ReviewSection';
 import HRPoliciesSection from './HRPoliciesSection';
 import AIProductSection from './AIProductSection';
 import AIServiceSection from './AIServiceSection';
+import HeroBanner from './HeroBanner';
+import AnimatedStats from './AnimatedStats';
+import TechStack from './TechStack';
 import off1 from '@/assets/office/off1.jpeg';
 import off2 from '@/assets/office/off2.jpeg';
 import off3 from '@/assets/office/off3.jpeg';
@@ -134,6 +137,12 @@ const TabNavigation = () => {
       case 'home':
         return (
           <div className="fade-in">
+            {/* Hero Banner with Typewriter Animation */}
+            <HeroBanner />
+            
+            {/* Animated Stats Counter */}
+            <AnimatedStats />
+
             <div className="max-w-6xl mx-auto px-6 py-8">
               <section className="text-center mb-16 fade-in">
                 <p className="text-lg text-muted-foreground leading-relaxed max-w-4xl mx-auto">
@@ -147,7 +156,14 @@ const TabNavigation = () => {
                 </p>
               </section>
               <ServicesSection />
+              
+              {/* Technology Stack */}
+              <TechStack />
+              
               <HiringSection />
+              
+              {/* Testimonials */}
+              <TestimonialsSection />
             </div>
           </div>
         );
