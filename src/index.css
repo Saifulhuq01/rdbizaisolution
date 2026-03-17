@@ -1,0 +1,277 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* RDBiz AI Solution - Futuristic AI Company Theme */
+@layer base {
+  :root {
+    /* Deep Space Background */
+    --background: 220 25% 97%;
+    --foreground: 220 30% 12%;
+
+    /* Electric Blue - AI & Innovation */
+    --primary: 220 85% 45%;
+    --primary-foreground: 220 30% 98%;
+    --primary-glow: 220 80% 55%;
+
+    /* Vivid Cyan - Technology & Intelligence */
+    --secondary: 185 85% 40%;
+    --secondary-foreground: 220 30% 10%;
+
+    /* Surface Colors - Cool Neutrals */
+    --card: 220 25% 99%;
+    --card-foreground: 220 30% 12%;
+
+    --popover: 220 25% 99%;
+    --popover-foreground: 220 30% 12%;
+
+    --muted: 220 15% 94%;
+    --muted-foreground: 220 10% 42%;
+
+    --accent: 220 30% 93%;
+    --accent-foreground: 220 70% 40%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 220 30% 98%;
+
+    --border: 220 15% 88%;
+    --input: 220 15% 88%;
+    --ring: 220 85% 45%;
+
+    /* Design System Extensions */
+    --radius: 0.75rem;
+
+    /* Gradients - AI tech tones */
+    --gradient-primary: linear-gradient(135deg, hsl(220 85% 45%), hsl(185 85% 40%));
+    --gradient-hero: linear-gradient(135deg, hsl(220 85% 35%) 0%, hsl(270 65% 50%) 50%, hsl(185 85% 40%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(220 25% 97%), hsl(220 15% 94%));
+
+    /* Shadows - Blue-toned */
+    --shadow-soft: 0 4px 20px hsl(220 85% 45% / 0.08);
+    --shadow-medium: 0 8px 30px hsl(220 85% 45% / 0.12);
+    --shadow-strong: 0 12px 40px hsl(220 50% 30% / 0.15);
+
+    /* Animation */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --sidebar-background: 220 25% 97%;
+    --sidebar-foreground: 220 30% 15%;
+    --sidebar-primary: 220 85% 45%;
+    --sidebar-primary-foreground: 220 30% 98%;
+    --sidebar-accent: 220 20% 94%;
+    --sidebar-accent-foreground: 220 30% 12%;
+    --sidebar-border: 220 15% 88%;
+    --sidebar-ring: 220 85% 45%;
+  }
+
+  .dark {
+    --background: 220 30% 5%;
+    --foreground: 220 15% 93%;
+
+    --card: 220 25% 8%;
+    --card-foreground: 220 15% 93%;
+
+    --popover: 220 25% 8%;
+    --popover-foreground: 220 15% 93%;
+
+    --primary: 220 75% 55%;
+    --primary-foreground: 220 30% 98%;
+
+    --secondary: 185 75% 50%;
+    --secondary-foreground: 220 30% 10%;
+
+    --muted: 220 20% 14%;
+    --muted-foreground: 220 10% 60%;
+
+    --accent: 220 25% 14%;
+    --accent-foreground: 220 15% 93%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 220 15% 93%;
+
+    --border: 220 15% 16%;
+    --input: 220 15% 16%;
+    --ring: 220 75% 55%;
+
+    --sidebar-background: 220 30% 6%;
+    --sidebar-foreground: 220 15% 90%;
+    --sidebar-primary: 220 75% 55%;
+    --sidebar-primary-foreground: 220 30% 98%;
+    --sidebar-accent: 220 20% 12%;
+    --sidebar-accent-foreground: 220 15% 90%;
+    --sidebar-border: 220 15% 12%;
+    --sidebar-ring: 220 75% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* RDBiz AI Solution - Custom Components */
+@layer components {
+  /* Rotating Logo Animation */
+  .logo-rotate {
+    transition: transform 0.3s ease-in-out;
+    animation: gentle-rotate 8s linear infinite;
+  }
+
+  .logo-rotate:hover {
+    animation-duration: 2s;
+  }
+
+  /* Fade In Animation */
+  .fade-in {
+    @apply animate-fade-in;
+  }
+
+  /* Hover Lift Effect */
+  .hover-lift {
+    @apply transition-all duration-300 ease-out;
+  }
+  .hover-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-medium);
+  }
+
+  /* Service Card - Tech hover */
+  .service-card {
+    @apply transition-all duration-500 ease-out;
+    border-left: 3px solid transparent;
+  }
+  .service-card:hover {
+    border-left-color: hsl(var(--primary));
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-strong);
+  }
+
+  /* Tab Button */
+  .tab-button {
+    @apply relative overflow-hidden transition-all duration-300;
+  }
+
+  .tab-button::after {
+    content: '';
+    @apply absolute bottom-0 left-0 right-0 h-[3px] bg-gradient-to-r from-primary to-secondary;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+
+  .tab-button.active::after,
+  .tab-button:hover::after {
+    transform: scaleX(1);
+  }
+
+  .tab-button > * {
+    @apply relative z-10;
+  }
+
+  /* Gradient Text - Blue to Cyan */
+  .gradient-text {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(220 85% 45%), hsl(185 85% 40%));
+  }
+
+  /* Subtle glow */
+  .pulse-glow {
+    @apply animate-pulse-glow;
+  }
+
+  /* Tech divider */
+  .food-divider,
+  .tech-divider {
+    height: 2px;
+    background: linear-gradient(90deg, transparent, hsl(var(--secondary) / 0.5), transparent);
+    border: none;
+  }
+
+  /* AI Neural Network Glow */
+  .neural-glow {
+    position: relative;
+  }
+  .neural-glow::before {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    border-radius: inherit;
+    background: linear-gradient(135deg, hsl(220 85% 45% / 0.3), hsl(185 85% 40% / 0.3));
+    z-index: -1;
+    filter: blur(8px);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+  .neural-glow:hover::before {
+    opacity: 1;
+  }
+
+  /* Glassmorphism card */
+  .glass-card {
+    background: hsl(var(--card) / 0.7);
+    backdrop-filter: blur(12px);
+    border: 1px solid hsl(var(--border) / 0.5);
+  }
+}
+
+/* Custom Keyframes */
+@keyframes gentle-rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 15px hsl(var(--primary) / 0.2);
+  }
+  50% {
+    box-shadow: 0 0 25px hsl(var(--primary) / 0.35);
+  }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes glow-pulse {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.8; }
+}
