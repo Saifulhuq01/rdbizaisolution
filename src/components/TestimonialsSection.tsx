@@ -6,13 +6,13 @@ const TestimonialsSection = () => {
     {
       name: "Sarah Chen",
       role: "CTO, TechVista Corp",
-      content: "RDBiz AI Solution transformed our operations with their intelligent automation platform. Their deep expertise in machine learning and NLP helped us reduce manual processes by 75%. The team's ability to understand complex enterprise requirements is truly world-class.",
+      content: "RDbiz AI Solutions transformed our operations with their intelligent automation platform. Their deep expertise in machine learning and NLP helped us reduce manual processes by 75%. The team's ability to understand complex enterprise requirements is truly world-class.",
       image: testimonialJane
     },
     {
       name: "Michael Roberts",
       role: "VP Engineering, DataFlow Inc",
-      content: "The AI models developed by RDBiz AI Solution exceeded our expectations. Their computer vision solution improved our quality inspection accuracy to 99.2%. We've seen a 3x ROI within the first year of deployment. Exceptional technical leadership and delivery.",
+      content: "The AI models developed by RDbiz AI Solutions exceeded our expectations. Their computer vision solution improved our quality inspection accuracy to 99.2%. We've seen a 3x ROI within the first year of deployment. Exceptional technical leadership and delivery.",
       image: testimonialJohn
     }
   ];

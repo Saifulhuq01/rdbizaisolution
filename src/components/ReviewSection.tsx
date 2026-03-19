@@ -73,7 +73,7 @@ const ReviewSection = () => {
               <h3 className="text-3xl font-bold gradient-text mb-3">Thank You! 🎉</h3>
               <p className="text-xl text-secondary font-semibold mb-2">Your Review Has Been Submitted</p>
               <p className="text-muted-foreground leading-relaxed max-w-md mx-auto mb-8">
-                We truly appreciate you taking the time to share your experience with RDBiz AI Solution.
+                We truly appreciate you taking the time to share your experience with RDbiz AI Solutions.
                 Your feedback helps us deliver even better AI solutions!
               </p>
 
@@ -115,7 +115,7 @@ const ReviewSection = () => {
             Share Your Experience
           </h2>
           <p className="text-muted-foreground text-lg max-w-xl mx-auto leading-relaxed">
-            Your feedback matters! Tell us about your experience with RDBiz AI Solution and help others discover intelligent solutions.
+            Your feedback matters! Tell us about your experience with RDbiz AI Solutions and help others discover intelligent solutions.
           </p>
         </div>
 

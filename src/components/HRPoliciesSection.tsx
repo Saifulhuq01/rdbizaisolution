@@ -36,7 +36,7 @@ const HRPoliciesSection = () => {
       <div className="text-center space-y-4 max-w-2xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold gradient-text">HR Policies & Core Values</h2>
         <p className="text-muted-foreground leading-relaxed">
-          At RDBiz AI Solution, our culture is built on mutual respect, elite communication, 
+          At RDbiz AI Solutions, our culture is built on mutual respect, elite communication, 
           and a relentless focus on innovation, quality, and time management.
         </p>
       </div>
@@ -63,7 +63,7 @@ const HRPoliciesSection = () => {
         <HRPolicyCard 
           icon={ShieldAlert} 
           title="Micro Inequities Awareness" 
-          description="We actively avoid subtle slights or exclusions. Everyone belongs at RDBiz AI Solution."
+          description="We actively avoid subtle slights or exclusions. Everyone belongs at RDbiz AI Solutions."
           badge="Critical"
         />
         <HRPolicyCard 
@@ -142,7 +142,7 @@ const HRPoliciesSection = () => {
             </div>
             <div>
               <p className="font-bold text-foreground">Ravi Dakshinamoorthy</p>
-              <p className="text-sm text-muted-foreground">Signed: RDBiz AI Solution CEO</p>
+              <p className="text-sm text-muted-foreground">Signed: RDbiz AI Solutions CEO</p>
             </div>
           </div>
         </div>

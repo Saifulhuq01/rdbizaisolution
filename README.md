@@ -1,4 +1,4 @@
-# RDBiz AI Solution
+# RDbiz AI Solutions
 
 Enterprise-grade Artificial Intelligence, Machine Learning, Deep Learning, and Intelligent Automation solutions.
 
@@ -43,4 +43,4 @@ src/
 
 ## License
 
-All Rights Reserved © 2025 RDBiz AI Solution
+All Rights Reserved © 2025 RDbiz AI Solutions

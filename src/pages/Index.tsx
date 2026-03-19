@@ -7,12 +7,12 @@ import FloatingLogo from '@/components/FloatingLogo';
 const Index = () => {
   useEffect(() => {
     // Update page title and meta description for SEO
-    document.title = 'RDBiz AI Solution - Enterprise AI & Intelligent Automation';
+    document.title = 'RDbiz AI Solutions - Enterprise AI & Intelligent Automation';
     
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
       metaDescription.setAttribute('content', 
-        'RDBiz AI Solution specializes in enterprise-grade Artificial Intelligence, Machine Learning, Deep Learning, and Intelligent Automation. Transforming businesses through cutting-edge AI technology.'
+        'RDbiz AI Solutions specializes in enterprise-grade Artificial Intelligence, Machine Learning, Deep Learning, and Intelligent Automation. Transforming businesses through cutting-edge AI technology.'
       );
     }
   }, []);
@@ -21,7 +21,7 @@ const Index = () => {
     <div className="min-h-screen bg-gradient-subtle">
       {/* SEO Headers */}
       <header className="sr-only">
-        <h1>RDBiz AI Solution - Enterprise AI & Intelligent Automation by Dr. Ravi Dakshinamoorthy</h1>
+        <h1>RDbiz AI Solutions - Enterprise AI & Intelligent Automation by Dr. Ravi Dakshinamoorthy</h1>
       </header>
       
       <main>

@@ -18,7 +18,7 @@ const Footer = () => {
               <div className="p-2 rounded-lg bg-blue-500/10">
                 <Brain className="w-6 h-6 text-blue-400" />
               </div>
-              <h3 className="text-xl font-bold text-white">RDBiz AI Solution</h3>
+              <h3 className="text-xl font-bold text-white">RDbiz AI Solutions</h3>
             </div>
             <p className="text-sm text-slate-400 leading-relaxed">
               Enterprise-grade Artificial Intelligence, Machine Learning, and Intelligent Automation solutions.
@@ -77,7 +77,7 @@ const Footer = () => {
         {/* Bottom bar */}
         <div className="mt-10 pt-6 border-t border-slate-800 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-xs text-slate-500">
-            © 2025 RDBiz AI Solution – Ravi Dakshinamoorthy's Business. All Rights Reserved.
+            © 2025 RDbiz AI Solutions – Ravi Dakshinamoorthy's Business. All Rights Reserved.
           </p>
           <p className="text-xs text-slate-500">
             Empowering Enterprises Through Artificial Intelligence & Intelligent Automation

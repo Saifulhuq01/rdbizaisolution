@@ -6,34 +6,34 @@ const AIProductSection = () => {
   const [hoveredCard, setHoveredCard] = useState<number | null>(null);
 
   const products = [
-    { 
-      id: 1, 
+    {
+      id: 1,
       icon: Brain,
-      title: 'Machine Learning Platform', 
+      title: 'Machine Learning Platform',
       desc: 'End-to-end ML pipeline for model training, deployment & monitoring',
       color: 'text-blue-600',
       bgColor: 'from-blue-500/10 to-blue-600/5'
     },
-    { 
-      id: 2, 
+    {
+      id: 2,
       icon: Eye,
-      title: 'Computer Vision Suite', 
+      title: 'Computer Vision Suite',
       desc: 'Advanced image recognition, object detection & video analytics',
       color: 'text-violet-600',
       bgColor: 'from-violet-500/10 to-violet-600/5'
     },
-    { 
-      id: 3, 
+    {
+      id: 3,
       icon: Cpu,
-      title: 'NLP & Language AI', 
+      title: 'NLP & Language AI',
       desc: 'Natural language processing, sentiment analysis & text generation',
       color: 'text-cyan-600',
       bgColor: 'from-cyan-500/10 to-cyan-600/5'
     },
-    { 
-      id: 4, 
+    {
+      id: 4,
       icon: Bot,
-      title: 'Intelligent Automation', 
+      title: 'Intelligent Automation',
       desc: 'RPA + AI powered workflow automation for enterprise processes',
       color: 'text-emerald-600',
       bgColor: 'from-emerald-500/10 to-emerald-600/5'
@@ -55,11 +55,11 @@ const AIProductSection = () => {
       {/* Header */}
       <div className="text-center space-y-4">
         <Badge variant="outline" className="px-4 py-1 border-primary/30 text-primary bg-primary/5 uppercase tracking-widest text-xs font-bold">
-          RDBiz AI Products
+          RDbiz AI Products
         </Badge>
         <h2 className="text-4xl font-extrabold gradient-text tracking-tight">Intelligent Enterprise Solutions</h2>
         <p className="text-muted-foreground max-w-2xl mx-auto text-lg leading-relaxed">
-          From machine learning platforms to cutting-edge computer vision — 
+          From machine learning platforms to cutting-edge computer vision —
           we deliver production-ready AI solutions that transform business operations.
         </p>
       </div>

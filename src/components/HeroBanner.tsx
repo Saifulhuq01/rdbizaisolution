@@ -68,7 +68,7 @@ const HeroBanner = () => {
         </h1>
 
         <p className="text-lg md:text-xl text-blue-100/80 max-w-3xl mx-auto leading-relaxed">
-          RDBiz AI Solution delivers enterprise-grade AI systems that automate operations, 
+          RDbiz AI Solutions delivers enterprise-grade AI systems that automate operations, 
           unlock insights, and drive measurable business outcomes. 
           From POC to production — we make AI work for you.
         </p>

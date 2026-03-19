@@ -14,7 +14,7 @@ const Header = () => {
           <div className="flex-shrink-0 group cursor-pointer">
             <img 
               src={rdbizLogo} 
-              alt="RDBiz AI Solution Logo" 
+              alt="RDbiz AI Solutions Logo" 
               className="h-20 object-contain group-hover:scale-105 transition-transform duration-300"
             />
           </div>
@@ -23,7 +23,7 @@ const Header = () => {
           <div className="flex-1 mx-8 fade-in flex items-center justify-center text-center">
             <div className="space-y-2">
               <h1 className="gradient-text-vivid font-extrabold text-4xl md:text-5xl tracking-tight">
-                RDBiz AI Solution
+                RDbiz AI Solutions
               </h1>
               <p className="text-primary font-semibold text-base md:text-lg animate-pulse tracking-wider">
                 Intelligence Driven • Innovation Delivered

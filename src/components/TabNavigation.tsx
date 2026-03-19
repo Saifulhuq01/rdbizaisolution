@@ -13,12 +13,21 @@ import AIServiceSection from './AIServiceSection';
 import HeroBanner from './HeroBanner';
 import AnimatedStats from './AnimatedStats';
 import TechStack from './TechStack';
-import off1 from '@/assets/office/off1.jpeg';
-import off2 from '@/assets/office/off2.jpeg';
-import off3 from '@/assets/office/off3.jpeg';
-import off4 from '@/assets/office/off4.jpeg';
-import off5 from '@/assets/office/off5.jpeg';
-import off6 from '@/assets/office/off6.jpeg';
+import off1 from '@/assets/office/off1.jpeg.jpg';
+import off2 from '@/assets/office/off2.jpeg.jpg';
+import off3 from '@/assets/office/off3.jpeg.jpg';
+import off4 from '@/assets/office/off4.jpeg.jpg';
+import off5 from '@/assets/office/off5.jpeg.jpeg';
+import off6 from '@/assets/office/off6.jpeg.jpg';
+import off7 from '@/assets/office/off7.jpeg.jpg';
+import off8 from '@/assets/office/off8.jpeg';
+import off9 from '@/assets/office/off9.jpeg';
+import off10 from '@/assets/office/off10.jpeg';
+import off11 from '@/assets/office/off11.jpeg';
+import off12 from '@/assets/office/off12.jpeg';
+import off13 from '@/assets/office/off13.jpeg';
+import off14 from '@/assets/office/off14.jpeg';
+import off15 from '@/assets/office/off15.jpeg';
 import conference from '@/assets/conference-center.jpg';
 import education from '@/assets/education-center.jpg';
 import officeMgmt from '@/assets/office-management.jpg';
@@ -39,7 +48,7 @@ const TabNavigation = () => {
     {
       id: 1,
       src: off1,
-      alt: 'RDBiz AI Modern Office Space',
+      alt: 'RDbiz AI Modern Office Space',
       category: 'Achievement'
     },
     {
@@ -74,42 +83,96 @@ const TabNavigation = () => {
     },
     {
       id: 7,
-      src: conference,
-      alt: 'RDBiz AI Conference Center',
+      src: off7,
+      alt: 'AI Development Hub',
       category: 'Achievement'
     },
     {
       id: 8,
+      src: off8,
+      alt: 'RDbiz Office Collaboration',
+      category: 'Achievement'
+    },
+    {
+      id: 9,
+      src: off9,
+      alt: 'Team Discussion Area',
+      category: 'Celebration'
+    },
+    {
+      id: 10,
+      src: off10,
+      alt: 'AI Research Unit',
+      category: 'Achievement'
+    },
+    {
+      id: 11,
+      src: off11,
+      alt: 'Modern Workspace Design',
+      category: 'Achievement'
+    },
+    {
+      id: 12,
+      src: off12,
+      alt: 'Corporate Meeting Area',
+      category: 'Celebration'
+    },
+    {
+      id: 13,
+      src: off13,
+      alt: 'AI Development Unit',
+      category: 'Achievement'
+    },
+    {
+      id: 14,
+      src: off14,
+      alt: 'Technical Innovation Center',
+      category: 'Achievement'
+    },
+    {
+      id: 15,
+      src: off15,
+      alt: 'Creative Working Space',
+      category: 'Celebration'
+    },
+    {
+      id: 16,
+      src: conference,
+      alt: 'RDbiz AI Conference Center',
+      category: 'Achievement'
+    },
+    {
+      id: 17,
       src: education,
       alt: 'AI Training & Education Hub',
       category: 'Achievement'
     },
     {
-      id: 9,
+      id: 18,
       src: officeMgmt,
       alt: 'AI Operations Management',
       category: 'Celebration'
     },
     {
-      id: 10,
+      id: 19,
       src: realEstate,
       alt: 'AI Research Facility',
       category: 'Achievement'
     },
     {
-      id: 11,
+      id: 20,
       src: relaxation,
       alt: 'Innovation & Wellness Area',
       category: 'Celebration'
     },
     {
-      id: 12,
+      id: 21,
       src: hiringTeam,
-      alt: 'RDBiz AI Talent Team',
+      alt: 'RDbiz AI Talent Team',
       category: 'Celebration'
     },
     {
-      id: 13,
+      id: 22,
       src: ceoRavi,
       alt: 'CEO Dr. Ravi Dakshinamoorthy',
       category: 'Achievement'
@@ -126,8 +189,8 @@ const TabNavigation = () => {
   ];
 
   const tabs = [
-    { id: 'aiproducts', label: 'RDBiz AI Products' },
-    { id: 'aiservice', label: 'RDBiz AI Service' },
+    { id: 'aiproducts', label: 'RDbiz AI Products' },
+    { id: 'aiservice', label: 'RDbiz AI Service' },
     { id: 'about', label: 'About Us' },
     { id: 'gallery', label: 'Gallery' }
   ];
@@ -139,7 +202,7 @@ const TabNavigation = () => {
           <div className="fade-in">
             {/* Hero Banner with Typewriter Animation */}
             <HeroBanner />
-            
+
             {/* Animated Stats Counter */}
             <AnimatedStats />
 
@@ -147,21 +210,21 @@ const TabNavigation = () => {
               <section className="text-center mb-16 fade-in">
                 <p className="text-lg text-muted-foreground leading-relaxed max-w-4xl mx-auto">
                   We focus on developing cutting-edge <strong className="text-primary">Artificial Intelligence</strong> and{' '}
-                  <strong className="text-primary">Machine Learning solutions</strong> to help enterprises 
+                  <strong className="text-primary">Machine Learning solutions</strong> to help enterprises
                   transform their operations, automate complex workflows, and unlock data-driven insights.
                   <br /><br />
-                  RDBiz AI Solution meets <strong className="text-primary">"Service Oriented Architecture (SOA)"</strong> and{' '}
+                  RDbiz AI Solutions meets <strong className="text-primary">"Service Oriented Architecture (SOA)"</strong> and{' '}
                   <strong className="text-primary">"Net Enabled SOA"</strong> standards,
                   delivering high-performance, enterprise-grade AI systems that match world-class standards.
                 </p>
               </section>
               <ServicesSection />
-              
+
               {/* Technology Stack */}
               <TechStack />
-              
+
               <HiringSection />
-              
+
               {/* Testimonials */}
               <TestimonialsSection />
             </div>
@@ -171,7 +234,7 @@ const TabNavigation = () => {
       case 'vision':
         return (
           <div className="max-w-4xl mx-auto p-8 fade-in">
-            <h2 className="text-3xl font-bold gradient-text mb-8">RDBiz AI Solution VISION STATEMENTS</h2>
+            <h2 className="text-3xl font-bold gradient-text mb-8">RDbiz AI Solutions VISION STATEMENTS</h2>
             <div className="space-y-6 text-foreground">
               <div className="bg-accent/20 p-6 rounded-lg">
                 <h3 className="font-semibold text-secondary mb-3">People working together, providing intelligent AI solutions through:</h3>
@@ -210,7 +273,7 @@ const TabNavigation = () => {
       case 'mission':
         return (
           <div className="max-w-4xl mx-auto p-8 fade-in">
-            <h2 className="text-3xl font-bold gradient-text mb-8">RDBiz AI Solution MISSION STATEMENTS</h2>
+            <h2 className="text-3xl font-bold gradient-text mb-8">RDbiz AI Solutions MISSION STATEMENTS</h2>
             <div className="space-y-6 text-foreground">
               <div className="bg-accent/20 p-6 rounded-lg">
                 <h3 className="font-semibold text-secondary mb-3">We do "AI Operations Support System" (AI-OSS) covering:</h3>
@@ -254,7 +317,7 @@ const TabNavigation = () => {
       case 'values':
         return (
           <div className="max-w-4xl mx-auto p-8 fade-in">
-            <h2 className="text-3xl font-bold gradient-text mb-8">RDBiz AI Solution VALUES STATEMENTS</h2>
+            <h2 className="text-3xl font-bold gradient-text mb-8">RDbiz AI Solutions VALUES STATEMENTS</h2>
             <div className="bg-gradient-to-br from-primary/5 to-secondary/5 p-8 rounded-lg">
               <h3 className="font-semibold text-secondary mb-4 text-lg">We take on responsibility for our mission to:</h3>
               <ul className="space-y-3 ml-6 text-muted-foreground text-lg leading-relaxed">
@@ -283,7 +346,7 @@ const TabNavigation = () => {
             {/* Company Description */}
             <div className="bg-gradient-to-br from-primary/10 to-secondary/10 p-8 rounded-xl mb-8">
               <p className="text-lg text-muted-foreground leading-relaxed text-center">
-                RDBiz AI Solution is dedicated to empowering enterprises through cutting-edge{' '}
+                RDbiz AI Solutions is dedicated to empowering enterprises through cutting-edge{' '}
                 <span className="font-bold text-primary">Artificial Intelligence</span> and{' '}
                 <span className="font-bold text-secondary">Machine Learning solutions</span>.
                 Founded by visionary technology leader Dr. Ravi Dakshinamoorthy, we combine
@@ -460,7 +523,7 @@ const TabNavigation = () => {
                 { id: 'mission', label: 'Our Mission', icon: Target, desc: 'Our AI goals & operations' },
                 { id: 'vision', label: 'Our Vision', icon: Eye, desc: 'Future AI plans & philosophy' },
                 { id: 'values', label: 'Our Values', icon: Heart, desc: 'Core AI principles we follow' },
-                { id: 'hrvalue', label: 'RDBiz AI HR/Value', icon: Users, desc: 'Career & people development' },
+                { id: 'hrvalue', label: 'RDbiz AI HR/Value', icon: Users, desc: 'Career & people development' },
               ].map((item) => (
                 <button
                   key={item.id}

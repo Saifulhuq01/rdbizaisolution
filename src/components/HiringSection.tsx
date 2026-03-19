@@ -10,7 +10,7 @@ const HiringSection = () => {
       </h2>
       <p className="text-lg text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
         We're building the future of intelligent automation and AI-driven enterprise solutions. 
-        Join RDBiz AI Solution and work alongside world-class data scientists, ML engineers, 
+        Join RDbiz AI Solutions and work alongside world-class data scientists, ML engineers, 
         and AI architects to solve the most challenging problems with artificial intelligence.
       </p>
       
