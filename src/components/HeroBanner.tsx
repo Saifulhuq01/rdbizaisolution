@@ -34,7 +34,7 @@ const HeroBanner = () => {
             ? phrase.substring(0, displayText.length - 1)
             : phrase.substring(0, displayText.length + 1)
         );
-      }, isDeleting ? 40 : 80);
+      }, isDeleting ? 120 : 150);
     }
 
     return () => clearTimeout(timeout);
@@ -45,7 +45,7 @@ const HeroBanner = () => {
       {/* Animated background particles */}
       <div className="absolute inset-0 hero-particles" />
       <div className="absolute inset-0 tech-grid-bg opacity-10" />
-      
+
       {/* Floating orbs */}
       <div className="absolute top-10 left-10 w-32 h-32 bg-blue-500/10 rounded-full blur-3xl animate-float" />
       <div className="absolute bottom-10 right-10 w-40 h-40 bg-cyan-500/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '1.5s' }} />
@@ -68,20 +68,20 @@ const HeroBanner = () => {
         </h1>
 
         <p className="text-lg md:text-xl text-blue-100/80 max-w-3xl mx-auto leading-relaxed">
-          RDbiz AI Solutions delivers enterprise-grade AI systems that automate operations, 
-          unlock insights, and drive measurable business outcomes. 
+          RDbiz AI Solutions delivers enterprise-grade AI systems that automate operations,
+          unlock insights, and drive measurable business outcomes.
           From POC to production — we make AI work for you.
         </p>
 
         <div className="flex flex-wrap justify-center gap-4 pt-4">
-          <button 
+          <button
             className="group px-8 py-3.5 bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-bold rounded-full shadow-lg hover:shadow-xl hover:shadow-blue-500/25 transition-all duration-300 hover:-translate-y-0.5"
             onClick={() => document.getElementById('review-section')?.scrollIntoView({ behavior: 'smooth' })}
           >
             Get Started
             <ChevronRight className="inline-block ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </button>
-          <button 
+          <button
             className="px-8 py-3.5 bg-white/10 text-white font-semibold rounded-full border border-white/20 hover:bg-white/20 transition-all duration-300 backdrop-blur-sm"
             onClick={() => {
               const el = document.querySelector('[data-tab="aiproducts"]');
